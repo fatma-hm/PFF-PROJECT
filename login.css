@@ -1,0 +1,77 @@
+.connexion {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  min-height: 100vh;
+  width: 100%;
+  background: rgb(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.connexion form {
+  margin: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  width: 40rem;
+  margin-top: 0;
+}
+.connexion form h3 {
+  font-size: 3rem;
+  color: #444;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem 0;
+}
+.connexion form .box {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: #333;
+  margin: 0.6rem 0;
+  border: 0.1rem solid rgb(0, 0, 0, 0.3);
+  text-transform: none;
+  padding-left: 1px;
+}
+.connexion form .box:focus {
+  border-color: pink;
+}
+.connexion form #remember {
+  margin: 2rem 0;
+}
+.connexion form label {
+  font-size: 1.5rem;
+}
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: rgb(206, 22, 83);
+  color: whitesmoke;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-color: pink;
+}
+.btn:hover {
+  background: pink;
+  color: black;
+}
+.connexion form .btn {
+  display: block;
+  width: 100%;
+}
+.connexion form p {
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  color: #666;
+}
+.connexion form p a {
+  color: rgb(206, 22, 83);
+}
+.connexion form p a :hover {
+  color: #333;
+  text-decoration: underline;
+}
