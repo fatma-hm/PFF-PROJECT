@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    
+    <link rel="stylesheet" href="cart.css" />
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -15,258 +15,200 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-</head>
-<body>
-    <header class="header">
-      
-        <div class="header-alert-news">
-          <p>
-            <b>livraison gratuite à partir de 99dt d'achat</b>
-          </p>
-        </div>
-        <div class="header-main">
-          <div class="container">
-            <div id="menu-bar">
-              <ion-icon name="menu-outline"></ion-icon>
-              </div>
-        
-            <a href="file:///C:/Users/Lenovo/Desktop/GOMYCODE/Projet%20FF/Beautica.html" class="header-logo">
-              <img 
-                src="images/home.png"
-                alt="img here"
-                width="50"
-                height="30"
-              />
-            </a>
-  
-            <a href="file:///C:/Users/Lenovo/Desktop/GOMYCODE/Projet%20FF/Beautica.html"  class="header-logo">
-              <img 
-                src="./images/logo.png"
-                alt="img here"
-                width="120"
-                height="36"
-              />
-            </a>
-            <div class="header-user-actions">
-              <button class="action-btn">
-               <a href="connxion.html" ><ion-icon  class="ion" name="person"></ion-icon></a> 
-              </button>
-              <button class="action-btn">
-               <a><ion-icon class="ion" name="bag" id="cart-ion"></ion-icon></a> 
-                <span class="count">0</span>
-              </button>
-              
-              <button class="action-btn">
-               <a href=""> <ion-icon class="ion"  name="heart-outline"></ion-icon></a>
-                <span class="count">0</span>
-              </button>
-            </div>
+  </head>
+  <body>
+    <div class="container-shooping cart">
+      <h2 class="text-center cart">SHOPPING CART</h2>
+      <div class="row content-cart">
+        <div class="column">
+          <div class="table-responsive">
+            <table id="mytable" class="table">
+              <thead>
+                <tr>
+                  <th>Produits</th>
+                  <th>Nom</th>
+                  <th>Quantité</th>
+                  <th>Prix</th>
+                  <th class="text-right">
+                    <span id="amount" class="amount">Montant</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="product-img">
+                      <div class="img-product">
+                        <img src="PRODUIT EN PROMO/1.jpg" alt="" />
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p>Product one</p>
+                  </td>
+                  <td>
+                    <div class="button-container">
+                      <button class="cart-qty-plus" type="value" value="+">
+                        +
+                      </button>
+                      <input
+                        type="text"
+                        name="qty"
+                        min="0"
+                        class="qty form-control"
+                        value="0"
+                      />
+                      <button class="cart-qty-minus" type="button" value="-">
+                        -
+                      </button>
+                    </div>
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      value="72"
+                      class="price form-control"
+                      disabled
+                    />
+                  </td>
+                  <td align="right">
+                    DTN<span id="amount" class="amount">0</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="product-img">
+                      <div class="img-product">
+                        <img src="PRODUIT EN PROMO/1.jpg" alt="" />
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p>Product one</p>
+                  </td>
+                  <td>
+                    <div class="button-container">
+                      <button class="cart-qty-plus" type="value" value="+">
+                        +
+                      </button>
+                      <input
+                        type="text"
+                        name="qty"
+                        min="0"
+                        class="qty form-control"
+                        value="0"
+                      />
+                      <button class="cart-qty-minus" type="button" value="-">
+                        -
+                      </button>
+                    </div>
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      value="72"
+                      class="price form-control"
+                      disabled
+                    />
+                  </td>
+                  <td align="right">
+                    DTN<span id="amount" class="amount">0</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="product-img">
+                      <div class="img-product">
+                        <img src="PRODUIT EN PROMO/1.jpg" alt="" />
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p>Product one</p>
+                  </td>
+                  <td>
+                    <div class="button-container">
+                      <button class="cart-qty-plus" type="value" value="+">
+                        +
+                      </button>
+                      <input
+                        type="text"
+                        name="qty"
+                        min="0"
+                        class="qty form-control"
+                        value="0"
+                      />
+                      <button class="cart-qty-minus" type="button" value="-">
+                        -
+                      </button>
+                    </div>
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      value="72"
+                      class="price form-control"
+                      disabled
+                    />
+                  </td>
+                  <td align="right">
+                    DTN<span id="amount" class="amount">0</span>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="4"></td>
+                  <td align="right">
+                    <strong
+                      >TOTAL = TND
+                      <span id="total" class="total">0</span></strong
+                    >
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
           </div>
         </div>
-    </div>
-  </header>
-  <main>
-    <section id="product1" class="section-p1">
-        <h1>#PRODUITS EN PROMO#</h1>
-        <div class="pro-container">
-            <div class="pro">
-              <div class="top-pro">
-                <h4 class="promo">PROMO  20%</h4>
-                <a href="#"><ion-icon class="heart"  name="heart-outline"></ion-icon></a> 
-              </div>
-              <a href="#"><img src="PRODUIT EN PROMO/sebiaclear-serum-30ml.jpg" alt=""></a>
-          <div class="des">
-              <span>SVR</span>
-              <h5> sebiaclear "serum" 30ml</h5>
-              <div class="start">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-              </div>
-              <h4>65.900DTN  <del>82.300TND</del></h4>
-          </div>
-          <a href=""><ion-icon name="bag-outline" class="cart"></ion-icon></a>
-          </div>
-          <div class="pro">
-            <div class="top-pro">
-              <h4 class="promo">PROMO  20%</h4>
-              <a href="#"><ion-icon class="heart"  name="heart-outline"></ion-icon></a> 
-            </div>
-            <a href="#"><img src="PRODUIT EN PROMO/sebiaclear-micro-peel-150ml.jpg" alt=""></a>
-        <div class="des">
-            <span>SVR</span>
-            <h5> sebiaclear "micro-peel" 150ml</h5>
-            <div class="start">
-              <ion-icon name="star"></ion-icon>
-              <ion-icon name="star"></ion-icon>
-              <ion-icon name="star"></ion-icon>
-              <ion-icon name="star"></ion-icon>
-              <ion-icon name="star"></ion-icon>
-            </div>
-            <h4>43.900DTN  <del>54.900TND</del></h4>
-        </div>
-        <a href=""><ion-icon name="bag-outline" class="cart"></ion-icon></a>
-        </div>
-        <div class="pro">
-          <div class="top-pro">
-            <h4 class="promo">PROMO  20%</h4>
-            <a href="#"><ion-icon class="heart"  name="heart-outline"></ion-icon></a> 
-          </div>
-          <a href="#"><img src="PRODUIT EN PROMO/sebiaclear-hydra-soin-reparateur-40ml.jpg" alt=""></a>
-      <div class="des">
-          <span>SVR</span>
-          <h5> sebiaclear  "hydra soin reparateur"<br> 40mls</h5>
-          <div class="start">
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-          </div>
-          <h4>38.900DTN  <del>40.600TND</del></h4>
-      </div>
-      <a href=""><ion-icon name="bag-outline" class="cart"></ion-icon></a>
-      </div>
-      <div class="pro">
-        <div class="top-pro">
-          <h4 class="promo">PROMO  20%</h4>
-          <a href="#"><ion-icon class="heart"  name="heart-outline"></ion-icon></a> 
-        </div>
-        <a href="#"><img src="PRODUIT EN PROMO/pack-sebiaclear-soin-oxygénant.jpg" alt=""></a>
-    <div class="des">
-        <span>SVR</span>
-        <h5> Pack sebiaclear "Soin oxygénant"</h5>
-        <div class="start">
-          <ion-icon name="star"></ion-icon>
-          <ion-icon name="star"></ion-icon>
-          <ion-icon name="star"></ion-icon>
-          <ion-icon name="star"></ion-icon>
-          <ion-icon name="star"></ion-icon>
-        </div>
-        <h4>86.300DTN  <del>107.900TND</del></h4>
-    </div>
-    <a href=""><ion-icon name="bag-outline" class="cart"></ion-icon></a>
-    </div>
-    <div class="pro">
-      <div class="top-pro">
-        <h4 class="promo">PROMO  20%</h4>
-        <a href="#"><ion-icon class="heart"  name="heart-outline"></ion-icon></a> 
-      </div>
-      <a href="#"><img src="PRODUIT EN PROMO/ampoule-b3-hydra-30ml.jpg" alt=""></a>
-  <div class="des">
-      <span>SVR</span>
-      <h5> Ampoule [b3] "hydra " 30ml</h5>
-      <div class="start">
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-      </div>
-      <h4>113.900DTN   <del>142.000TND</del></h4>
-  </div>
-  <a href=""><ion-icon name="bag-outline" class="cart"></ion-icon></a>
-  </div>
-  <div class="pro">
-    <div class="top-pro">
-      <h4 class="promo">PROMO  20%</h4>
-      <a href="#"><ion-icon class="heart"  name="heart-outline"></ion-icon></a> 
-    </div>
-    <a href="#"><img src="PRODUIT EN PROMO/-cera-biotic-baume-regenerant-comblant-50-ml.jpg" alt=""></a>
-<div class="des">
-    <span>SVR</span>
-    <h5>[cera] BIOTIC "baume<br> regenerant  comblant" 50-ml</h5>
-    <div class="start">
-      <ion-icon name="star"></ion-icon>
-      <ion-icon name="star"></ion-icon>
-      <ion-icon name="star"></ion-icon>
-      <ion-icon name="star"></ion-icon>
-      <ion-icon name="star"></ion-icon>
-    </div>
-    <h4>139.00DTN   <del>173.500TND</del></h4>
-</div>
-<a href=""><ion-icon name="bag-outline" class="cart"></ion-icon></a>
-</div>
-<div class="pro">
-  <div class="top-pro">
-    <h4 class="promo">PROMO  20%</h4>
-    <a href="#"><ion-icon class="heart"  name="heart-outline"></ion-icon></a> 
-  </div>
-  <a href="#"><img src="PRODUIT EN PROMO/1.jpg" alt=""></a>
-<div class="des">
-  <span>SVR</span>
-  <h5> Ampoule [C] "Anti-OX" 30ml </h5>
-  <div class="start">
-    <ion-icon name="star"></ion-icon>
-    <ion-icon name="star"></ion-icon>
-    <ion-icon name="star"></ion-icon>
-    <ion-icon name="star"></ion-icon>
-    <ion-icon name="star"></ion-icon>
-  </div>
-  <h4>109.900TND <del>129.000TND</del></h4>
-</div>
-<a href=""><ion-icon name="bag-outline" class="cart"></ion-icon></a>
-</div>
-<div class="pro">
-  <div class="top-pro">
-    <h4 class="promo">PROMO  20%</h4>
-    <a href="#"><ion-icon class="heart"  name="heart-outline"></ion-icon></a> 
-  </div>
-  <a href="#"><img src="PRODUIT EN PROMO/2.jpg" alt=""></a>
-<div class="des">
-  <span>SVR</span>
-  <h5> Day Clairial"correcteur <br> uniformisant SPF30"  30ml</h5>
-  <div class="start">
-    <ion-icon name="star"></ion-icon>
-    <ion-icon name="star"></ion-icon>
-    <ion-icon name="star"></ion-icon>
-    <ion-icon name="star"></ion-icon>
-    <ion-icon name="star"></ion-icon>
-  </div>
-  <h4>65.900DTN  <del>82.300TND</del></h4>
-</div>
-<a href=""><ion-icon name="bag-outline" class="cart"></ion-icon></a>
-</div>
-        </div>
-      </section>
-  </main>
-  <!-------------------- SHOPPING CART ------------------------->
-  <div class="shopping-cart">
-    <h2 class="cart-title">Votre Carte</h2>
-    <div class="cart-content">
-      <div class="cart-box">
-        <img src="PRODUIT EN PROMO/1.jpg" alt="" class="cart-img">
-        <div class="detail-box">
-          <div class="cart-product-title">SVR<br>
-            Ampoule [C] "Anti-OX" 30ml</div>
-            <div class="cart-price">109.900TND <del>129.000TND</del></div>
-            <input type="number" value="1" class="cart-quantity">
-        </div>
-        <ion-icon name="trash-sharp" class="cart-remove"></ion-icon>
       </div>
     </div>
-    <div class="total">
-      <div class="total-title">Totale</div>
-      <div class="total-price">0 DTN</div>
-    </div>
-    <button type="button" class="btn-buy">Acheter maintenant</button>
-  <ion-icon name="close-outline" id="close-cart"></ion-icon>
-  </div>
-  <script>
-    let cartIcon = document.querySelector("#cart-ion");
-let cart = document.querySelector(".cart");
-let closeCart = document.querySelector("#close-cart");
-
-cartIcon.onclick = () => {
-  cart.classList.add("active");
-};
-
-closeCart.onclick = () => {
-    cart.classList.remove("active");
-};
-
-  </script>
-</body>
+    <script>
+      $(document).ready(function () {
+        update_amounts();
+        $(".qty, .price").on("keyup keypress blur change", function (e) {
+          update_amounts();
+        });
+      });
+      function update_amounts() {
+        var sum = 0.0;
+        $("#mytable > tbody > tr").each(function () {
+          var qty = $(this).find(".qty").val();
+          var price = $(this).find(".price").val();
+          var amount = qty * price;
+          sum += amount;
+          $(this)
+            .find(".amount")
+            .text("" + amount);
+        });
+        $(".total").text(sum);
+      }
+      var incrementQty;
+      var decrementQty;
+      var plusBtn = $(".cart-qty-plus");
+      var minusBtn = $(".cart-qty-minus");
+      var incrementQty = plusBtn.click(function () {
+        var $n = $(this).parent(".button-container").find(".qty");
+        $n.val(Number($n.val()) + 1);
+        update_amounts();
+      });
+      var decrementQty = minusBtn.click(function () {
+        var $n = $(this).parent(".button-container").find(".qty");
+        var QtyVal = Number($n.val());
+        if (QtyVal > 0) {
+          $n.val(QtyVal - 1);
+        }
+        update_amounts();
+      });
+    </script>
+  </body>
 </html>
